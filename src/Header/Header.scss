@@ -1,0 +1,15 @@
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+
+  .logo {
+    width: 10vw;
+    background-color: green;
+  }
+
+  .navbar {
+    width: 40vw;
+    background-color: red;
+  }
+}
