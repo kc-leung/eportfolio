@@ -3,6 +3,6 @@ import './Projects.scss';
 
 export default class Projects extends Component {
   render() {
-    return <div></div>;
+    return <div className="projectsContainer">projects content</div>;
   }
 }
