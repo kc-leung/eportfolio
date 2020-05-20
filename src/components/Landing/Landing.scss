@@ -7,6 +7,21 @@
   background-size: cover;
   background-attachment: scroll;
 
+  .landingContainer-cover {
+    height: 85vh;
+    width: 100%;
+    position: absolute;
+    background-color: #242943;
+    opacity: 0.8;
+  }
+
   .contentContainer {
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
   }
 }
