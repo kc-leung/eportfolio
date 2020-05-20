@@ -1,0 +1,12 @@
+.landingContainer {
+  height: 85vh;
+  display: grid;
+  grid-template-rows: 7vh 78vh;
+  background-image: url('../../assets/landing.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+
+  .contentContainer {
+  }
+}

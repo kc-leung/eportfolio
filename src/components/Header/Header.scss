@@ -1,7 +1,9 @@
 .headerContainer {
+  height: 7vh;
+  padding: 0 1rem;
   display: flex;
-  justify-content: center;
-  background-color: blue;
+  justify-content: space-between;
+  opacity: 1;
 
   .logo {
     width: 10vw;
@@ -10,6 +12,6 @@
 
   .navbar {
     width: 40vw;
-    background-color: red;
+    background-color: green;
   }
 }
