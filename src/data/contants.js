@@ -9,8 +9,8 @@ export const projectArray = [
 
 export const colorArray = [
   '#6fc3df',
-  '#8d82c4',
   '#ec8d81',
+  'palegoldenrod',
   '#e7b788',
   '#8ea9e8',
   '#87c5a4',

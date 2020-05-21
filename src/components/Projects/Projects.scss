@@ -1,26 +1,36 @@
 .projectsContainer {
-  height: 100vh;
-
-  .contentContainer {
+  .titleContainer {
     height: 5vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
-    z-index: 1;
+    background-color: #8d82c4;
+    opacity: 0.8;
   }
 
-  .projectBanner {
+  .contentContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50vh 50vh 50vh;
 
     .bannerColor {
-      height: 5vh;
       opacity: 0.8;
     }
+  }
+
+  .contentContainer div:nth-child(2) {
+    grid-column: span 2;
+  }
+
+  .contentContainer div:nth-child(3) {
+    grid-column: span 2;
+  }
+
+  .contentContainer div:nth-child(6) {
+    grid-column: span 2;
   }
 }

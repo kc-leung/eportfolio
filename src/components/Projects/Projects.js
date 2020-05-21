@@ -7,10 +7,10 @@ export default class Projects extends Component {
   render() {
     return (
       <div className="projectsContainer">
-        <div className="contentContainer">
+        <div className="titleContainer">
           <div className="title">P R O J E C T S</div>
         </div>
-        <div className="projectBanner">
+        <div className="contentContainer">
           {colorArray.map((data, colorIndex) => {
             return (
               <div
