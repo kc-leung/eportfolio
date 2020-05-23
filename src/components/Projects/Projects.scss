@@ -17,8 +17,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 50vh 50vh 50vh;
 
-    .bannerColor {
-      opacity: 0.8;
+    .itemContainer {
+      .projectTitle {
+        position: absolute;
+        z-index: 1;
+      }
+
+      .bannerColor {
+        height: 100%;
+        opacity: 0.8;
+      }
     }
   }
 

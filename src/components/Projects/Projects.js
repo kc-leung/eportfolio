@@ -11,9 +11,10 @@ export default class Projects extends Component {
           <div className="title">P R O J E C T S</div>
         </div>
         <div className="contentContainer">
-          {projectArray.map((data, colorIndex) => {
+          {projectArray.map((data, itemIndex) => {
             return (
-              <div key={colorIndex} className="itemContainer">
+              <div key={itemIndex} className="itemContainer">
+                <div className="projectTitle">{data.title}</div>
                 <div
                   className="bannerColor"
                   style={{ backgroundColor: `${data.color}` }}
