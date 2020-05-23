@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Projects.scss';
 
-import { colorArray } from '../../data/contants';
+import { projectArray } from '../../data/contants';
 
 export default class Projects extends Component {
   render() {
@@ -11,13 +11,14 @@ export default class Projects extends Component {
           <div className="title">P R O J E C T S</div>
         </div>
         <div className="contentContainer">
-          {colorArray.map((data, colorIndex) => {
+          {projectArray.map((data, colorIndex) => {
             return (
-              <div
-                key={colorIndex}
-                className="bannerColor"
-                style={{ backgroundColor: `${data}` }}
-              />
+              <div key={colorIndex} className="itemContainer">
+                <div
+                  className="bannerColor"
+                  style={{ backgroundColor: `${data.color}` }}
+                />
+              </div>
             );
           })}
         </div>

@@ -1,17 +1,26 @@
 export const projectArray = [
-  'reactNative - app - PinIT',
-  'react - redux - firebase',
-  'angular - app - student',
-  'angular - github - starring',
-  'angular - app - employes',
-  'angular - app - comments',
-];
-
-export const colorArray = [
-  '#6fc3df',
-  '#ec8d81',
-  'palegoldenrod',
-  '#e7b788',
-  '#8ea9e8',
-  '#87c5a4',
+  {
+    title: 'reactNative - app - PinIT',
+    color: '#6fc3df',
+  },
+  {
+    title: 'react - redux - firebase',
+    color: '#ec8d81',
+  },
+  {
+    title: 'angular - app - student',
+    color: 'palegoldenrod',
+  },
+  {
+    title: 'angular - github - starring',
+    color: '#e7b788',
+  },
+  {
+    title: 'angular - app - employes',
+    color: '#8ea9e8',
+  },
+  {
+    title: 'angular - app - comments',
+    color: '#87c5a4',
+  },
 ];
