@@ -4,7 +4,23 @@ import './Projects.scss';
 import { projectArray } from '../../data/contants';
 
 export default class Projects extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      active: null,
+    };
+  }
+
+  onHoverItem = (index) => {
+    console.log(index);
+    this.setState({
+      active: index,
+    });
+  };
+
   render() {
+    console.log('render!!');
     return (
       <div className="projectsContainer">
         <div className="titleContainer">
@@ -13,7 +29,12 @@ export default class Projects extends Component {
         <div className="contentContainer">
           {projectArray.map((data, itemIndex) => {
             return (
-              <div key={itemIndex} className="itemContainer">
+              <div
+                key={itemIndex}
+                className="itemContainer"
+                onMouseEnter={() => this.onHoverItem(itemIndex)}
+                onMouseLeave={() => this.onHoverItem(null)}
+              >
                 <div className="itemDetailContainer">
                   <div className="projectTitle">{data.title}</div>
                   <div className="separator" />
@@ -21,7 +42,10 @@ export default class Projects extends Component {
                 </div>
                 <div
                   className="bannerColor"
-                  style={{ backgroundColor: `${data.color}` }}
+                  style={{
+                    backgroundColor: `${data.color}`,
+                    opacity: `${this.state.active === itemIndex ? 0 : 0.8}`,
+                  }}
                 />
               </div>
             );
