@@ -1,8 +1,3 @@
-html {
-  --scrollbarBG: #242943;
-  --thumbBG: #90a4ae;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,11 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scrollbar-color: #242943;
 }
 
-body::-webkit-scrollbar-track {
-  background: #242943;
+:root {
+  scrollbar-color: gray #242943 !important;
+  scrollbar-width: thin !important;
 }
 
 code {

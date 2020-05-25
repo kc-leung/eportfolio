@@ -39,6 +39,10 @@ export default class Projects extends Component {
                   <div className="projectTitle">{data.title}</div>
                   <div className="separator" />
                   <div className="projectDescription">{data.description}</div>
+                  <div className="iconContainer">
+                    <div className="demo">Demo</div>
+                    <div className="github">Github</div>
+                  </div>
                 </div>
                 <div
                   className="bannerColor"
