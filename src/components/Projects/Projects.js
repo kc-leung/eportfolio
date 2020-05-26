@@ -10,17 +10,17 @@ export default class Projects extends Component {
     this.state = {
       active: null,
     };
+
+    this.testing = './Angularstore.png';
   }
 
   onHoverItem = (index) => {
-    console.log(index);
     this.setState({
       active: index,
     });
   };
 
   render() {
-    console.log('render!!');
     return (
       <div className="projectsContainer">
         <div className="titleContainer">
@@ -32,17 +32,27 @@ export default class Projects extends Component {
               <div
                 key={itemIndex}
                 className="itemContainer"
+                style={{
+                  backgroundImage: `url(require("${data.backgroundImage}"))`,
+                }}
                 onMouseEnter={() => this.onHoverItem(itemIndex)}
                 onMouseLeave={() => this.onHoverItem(null)}
               >
                 <div className="itemDetailContainer">
-                  <div className="projectTitle">{data.title}</div>
-                  <div className="separator" />
-                  <div className="projectDescription">{data.description}</div>
-                  <div className="iconContainer">
-                    <div className="demo">Demo</div>
-                    <div className="github">Github</div>
-                  </div>
+                  {this.state.active === itemIndex ? (
+                    <div className="iconContainer">
+                      <div className="demo">Demo</div>
+                      <div className="github">Github</div>
+                    </div>
+                  ) : (
+                    <div className="descriptionContainer">
+                      <div className="projectTitle">{data.title}</div>
+                      <div className="separator" />
+                      <div className="projectDescription">
+                        {data.description}
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div
                   className="bannerColor"

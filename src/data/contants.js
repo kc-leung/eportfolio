@@ -4,35 +4,41 @@ export const projectArray = [
     color: '#6fc3df',
     description:
       'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    backgroundImage: '../../assets/projects/PinIt.png',
   },
   {
     title: 'react - redux - firebase',
     color: '#ec8d81',
     description:
       'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    backgroundImage: '../../assets/projects/ReactApp.png',
   },
   {
     title: 'angular - app - student',
     color: 'palegoldenrod',
     description:
       'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    backgroundImage: '../../assets/projects/AngularStudents.png',
   },
   {
     title: 'angular - github - starring',
     color: '#e7b788',
     description:
       'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    backgroundImage: '../../assets/projects/FrontEndChallenge.png',
   },
   {
     title: 'angular - app - employes',
     color: '#8ea9e8',
     description:
       'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    backgroundImage: '../../assets/projects/PracticeApp.png',
   },
   {
     title: 'angular - app - comments',
     color: '#87c5a4',
     description:
       'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    backgroundImage: '../../assets/projects/AngularStore.png',
   },
 ];

@@ -20,11 +20,14 @@
     .itemContainer {
       display: flex;
       align-items: center;
+      background-image: url('../../assets/projects/Angularstore.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
 
       .itemDetailContainer {
         margin-left: 2rem;
         position: absolute;
-        color: white;
         z-index: 1;
 
         .projectTitle {
@@ -38,7 +41,7 @@
           width: 18rem;
           height: 0.15rem;
           margin-bottom: 1rem;
-          background-color: white;
+          background-color: black;
         }
       }
 
