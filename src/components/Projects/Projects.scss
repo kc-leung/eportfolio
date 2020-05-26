@@ -20,7 +20,6 @@
     .itemContainer {
       display: flex;
       align-items: center;
-      background-image: url('../../assets/projects/Angularstore.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -48,7 +47,7 @@
       .bannerColor {
         height: 100%;
         width: 100%;
-        opacity: 0.8;
+        opacity: 0.9;
         transition: opacity 0.5s ease-out;
       }
     }

@@ -33,7 +33,7 @@ export default class Projects extends Component {
                 key={itemIndex}
                 className="itemContainer"
                 style={{
-                  backgroundImage: `url(require("${data.backgroundImage}"))`,
+                  backgroundImage: `url(${data.backgroundImage})`,
                 }}
                 onMouseEnter={() => this.onHoverItem(itemIndex)}
                 onMouseLeave={() => this.onHoverItem(null)}
