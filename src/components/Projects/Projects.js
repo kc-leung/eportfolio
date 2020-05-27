@@ -41,8 +41,22 @@ export default class Projects extends Component {
                 <div className="itemDetailContainer">
                   {this.state.active === itemIndex ? (
                     <div className="iconContainer">
-                      <div className="demo">Demo</div>
-                      <div className="github">Github</div>
+                      <div
+                        className="icon demo"
+                        style={{
+                          backgroundColor: `${data.color}`,
+                        }}
+                      >
+                        <span>Demo</span>
+                      </div>
+                      <div
+                        className="icon github"
+                        style={{
+                          backgroundColor: `${data.color}`,
+                        }}
+                      >
+                        <span>Github</span>
+                      </div>
                     </div>
                   ) : (
                     <div className="descriptionContainer">
