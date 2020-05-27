@@ -18,29 +18,42 @@
     grid-template-rows: 50vh 50vh 50vh;
 
     .itemContainer {
-      display: flex;
-      align-items: center;
+      position: relative;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
 
       .itemDetailContainer {
-        margin-left: 2rem;
+        height: 100%;
+        width: 100%;
         position: absolute;
+        display: flex;
+        align-items: center;
         z-index: 1;
 
-        .projectTitle {
-          margin-bottom: 1rem;
-          font-size: 1.2rem;
-          font-weight: 600;
-          line-height: 1.65;
+        .iconContainer {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: flex-end;
         }
 
-        .separator {
-          width: 18rem;
-          height: 0.15rem;
-          margin-bottom: 1rem;
-          background-color: black;
+        .descriptionContainer {
+          margin: 0 2rem;
+
+          .projectTitle {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.65;
+          }
+
+          .separator {
+            width: 18rem;
+            height: 0.15rem;
+            margin-bottom: 1rem;
+            background-color: black;
+          }
         }
       }
 
@@ -57,19 +70,11 @@
   div:nth-child(3),
   div:nth-child(6) {
     grid-column: span 3;
-
-    .itemDetailContainer {
-      width: 50%;
-    }
   }
 
   .contentContainer div:nth-child(1),
   div:nth-child(4),
   div:nth-child(5) {
     grid-column: span 2;
-
-    .itemDetailContainer {
-      width: 30%;
-    }
   }
 }
