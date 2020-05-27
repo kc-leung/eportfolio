@@ -23,8 +23,22 @@ export const projectArray = [
     backgroundImage: Images[1],
   },
   {
+    title: 'angular - app - employes',
+    color: 'rgb(244, 163, 83)',
+    description:
+      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    backgroundImage: Images[4],
+  },
+  {
+    title: 'angular - app - comments',
+    color: '#8ea9e8',
+    description:
+      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    backgroundImage: Images[5],
+  },
+  {
     title: 'angular - app - student',
-    color: 'palegoldenrod',
+    color: '#87c5a4',
     description:
       'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     backgroundImage: Images[2],
@@ -35,19 +49,5 @@ export const projectArray = [
     description:
       'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     backgroundImage: Images[3],
-  },
-  {
-    title: 'angular - app - employes',
-    color: '#8ea9e8',
-    description:
-      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    backgroundImage: Images[4],
-  },
-  {
-    title: 'angular - app - comments',
-    color: '#87c5a4',
-    description:
-      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    backgroundImage: Images[5],
   },
 ];

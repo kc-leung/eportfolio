@@ -27,24 +27,38 @@
         height: 100%;
         width: 100%;
         position: absolute;
-        display: flex;
-        align-items: center;
         z-index: 1;
 
         .iconContainer {
           width: 100%;
+          height: 100%;
           display: flex;
-          justify-content: space-evenly;
+          justify-content: center;
           align-items: flex-end;
+
+          .demo {
+            width: 20%;
+            height: 20%;
+            margin: 0 2rem 5rem 0;
+            background-color: red;
+          }
+
+          .github {
+            width: 20%;
+            height: 20%;
+            margin-bottom: 5rem;
+            background-color: red;
+          }
         }
 
         .descriptionContainer {
-          margin: 0 2rem;
+          margin: 8rem 2rem 0 2rem;
+          color: white;
 
           .projectTitle {
             margin-bottom: 1rem;
-            font-size: 1.2rem;
-            font-weight: 600;
+            font-size: 1.5rem;
+            font-weight: 700;
             line-height: 1.65;
           }
 
@@ -52,7 +66,11 @@
             width: 18rem;
             height: 0.15rem;
             margin-bottom: 1rem;
-            background-color: black;
+            background-color: white;
+          }
+
+          .projectDescription {
+            font-size: 1rem;
           }
         }
       }

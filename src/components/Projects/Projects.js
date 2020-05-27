@@ -46,8 +46,10 @@ export default class Projects extends Component {
                     </div>
                   ) : (
                     <div className="descriptionContainer">
-                      <div className="projectTitle">{data.title}</div>
-                      <div className="separator" />
+                      <div className="descriptionHeader">
+                        <div className="projectTitle">{data.title}</div>
+                        <div className="separator" />
+                      </div>
                       <div className="projectDescription">
                         {data.description}
                       </div>
@@ -58,7 +60,7 @@ export default class Projects extends Component {
                   className="bannerColor"
                   style={{
                     backgroundColor: `${data.color}`,
-                    opacity: `${this.state.active === itemIndex ? 0 : 0.8}`,
+                    opacity: `${this.state.active === itemIndex ? 0 : 0.9}`,
                   }}
                 />
               </div>
