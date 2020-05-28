@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 50vh 50vh 50vh;
-    background-color: black;
+    background-color: gainsboro;
 
     .itemContainer {
       position: relative;
@@ -38,18 +38,32 @@
           align-items: flex-end;
 
           .icon {
-            width: 15rem;
+            width: 12rem;
             height: 2rem;
             display: flex;
             justify-content: center;
             align-items: center;
             color: #fff;
-            border: 4px solid #242943;
+            border: 3px solid #242943;
             box-shadow: 0px 0px 0px 1px #242943 inset;
             overflow: hidden;
             position: relative;
             transition: all 0.2s ease-out;
             z-index: 2;
+            cursor: pointer;
+
+            .demoIcon,
+            .githubIcon {
+              width: 2rem;
+              height: 1.5rem;
+              margin-left: 0.2rem;
+            }
+
+            span {
+              font-size: 1.5rem;
+              font-weight: 800;
+              -webkit-text-stroke: 0.8px #333;
+            }
           }
 
           .demo {
@@ -61,14 +75,19 @@
           }
 
           .icon:hover {
-            border: 4px solid #242943;
+            border: 3px solid #242943;
             background-color: #fff;
-            box-shadow: 0px 0px 0px 4px #eee inset;
+            box-shadow: 0px 0px 0px 3px #eee inset;
           }
 
           .icon:hover span {
             letter-spacing: 0.13rem;
+            -webkit-text-stroke: 0px;
             color: #333;
+          }
+
+          .icon:active {
+            top: 0.1rem;
           }
 
           /* Reflections */

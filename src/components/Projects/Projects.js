@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Projects.scss';
 
 import { projectArray } from '../../data/contants';
+import demoIcon from '../../assets/svg/demo.svg';
+import githubIcon from '../../assets/svg/github.svg';
 
 export default class Projects extends Component {
   constructor(props) {
@@ -48,6 +50,11 @@ export default class Projects extends Component {
                         }}
                       >
                         <span>Demo</span>
+                        <img
+                          src={demoIcon}
+                          className="demoIcon"
+                          alt="demoIcon"
+                        />
                       </div>
                       <div
                         className="icon github"
@@ -55,7 +62,12 @@ export default class Projects extends Component {
                           backgroundColor: `${data.color}`,
                         }}
                       >
-                        <span>Github</span>
+                        <span>GitHub</span>
+                        <img
+                          src={githubIcon}
+                          className="githubIcon"
+                          alt="githubIcon"
+                        />
                       </div>
                     </div>
                   ) : (
