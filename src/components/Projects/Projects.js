@@ -43,32 +43,44 @@ export default class Projects extends Component {
                 <div className="itemDetailContainer">
                   {this.state.active === itemIndex ? (
                     <div className="iconContainer">
-                      <div
-                        className="icon demo"
-                        style={{
-                          backgroundColor: `${data.color}`,
-                        }}
+                      <a
+                        href={`${data.urlDemo}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        <span>Demo</span>
-                        <img
-                          src={demoIcon}
-                          className="demoIcon"
-                          alt="demoIcon"
-                        />
-                      </div>
-                      <div
-                        className="icon github"
-                        style={{
-                          backgroundColor: `${data.color}`,
-                        }}
+                        <div
+                          className="icon demo"
+                          style={{
+                            backgroundColor: `${data.color}`,
+                          }}
+                        >
+                          <span>Demo</span>
+                          <img
+                            src={demoIcon}
+                            className="demoIcon"
+                            alt="demoIcon"
+                          />
+                        </div>
+                      </a>
+                      <a
+                        href={`${data.urlGithub}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        <span>GitHub</span>
-                        <img
-                          src={githubIcon}
-                          className="githubIcon"
-                          alt="githubIcon"
-                        />
-                      </div>
+                        <div
+                          className="icon github"
+                          style={{
+                            backgroundColor: `${data.color}`,
+                          }}
+                        >
+                          <span>GitHub</span>
+                          <img
+                            src={githubIcon}
+                            className="githubIcon"
+                            alt="githubIcon"
+                          />
+                        </div>
+                      </a>
                     </div>
                   ) : (
                     <div className="descriptionContainer">

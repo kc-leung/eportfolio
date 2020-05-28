@@ -22,7 +22,7 @@
       position: relative;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 100% 100%;
 
       .itemDetailContainer {
         height: 100%;
@@ -37,6 +37,10 @@
           justify-content: center;
           align-items: flex-end;
 
+          a:link {
+            text-decoration: none;
+          }
+
           .icon {
             width: 12rem;
             height: 2rem;
@@ -44,8 +48,8 @@
             justify-content: center;
             align-items: center;
             color: #fff;
-            border: 3px solid #242943;
-            box-shadow: 0px 0px 0px 1px #242943 inset;
+            border: 3px solid #242943c7;
+            box-shadow: 0px 0px 0px 1px #242943c7 inset;
             overflow: hidden;
             position: relative;
             transition: all 0.2s ease-out;
@@ -75,7 +79,7 @@
           }
 
           .icon:hover {
-            border: 3px solid #242943;
+            border: 3px solid #242943c7;
             background-color: #fff;
             box-shadow: 0px 0px 0px 3px #eee inset;
           }
@@ -93,7 +97,7 @@
           /* Reflections */
           .icon:after {
             background: #fff;
-            border: 0px solid #242943;
+            border: 0px solid #242943c7;
             content: '';
             height: 155px;
             left: -75px;
@@ -109,7 +113,7 @@
 
           .icon:hover:after {
             background: #fff;
-            border: 20px solid #242943;
+            border: 20px solid #242943c7;
             opacity: 0;
             left: 120%;
             -webkit-transform: rotate(40deg);
