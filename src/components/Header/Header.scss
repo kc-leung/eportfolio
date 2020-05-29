@@ -1,8 +1,12 @@
 .headerContainer {
   height: 10vh;
-  padding: 0 1.5rem;
+  padding: 0 1.8rem;
   display: flex;
   justify-content: space-between;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.65em;
+  letter-spacing: 0.2rem;
   z-index: 1;
 
   .logoContainer {
@@ -20,23 +24,10 @@
       align-items: center;
       background-color: white;
       color: #242943;
-      font-size: 0.95rem;
-      font-weight: 600;
-      line-height: 1.65em;
-      letter-spacing: 0.2rem;
     }
 
     .profession {
       color: white;
-      font-size: 0.95rem;
-      font-weight: 600;
-      line-height: 1.65em;
-      letter-spacing: 0.2rem;
     }
-  }
-
-  .navbar {
-    width: 40vw;
-    background-color: green;
   }
 }

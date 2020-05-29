@@ -64,3 +64,5 @@ export const projectArray = [
     urlGithub: 'https://github.com/kc-leung/angular-github-starring',
   },
 ];
+
+export const navbarArray = ['HOME', 'ABOUT', 'PROJECTS', 'CONTACTS'];

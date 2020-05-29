@@ -1,0 +1,15 @@
+.navbarContainer {
+  width: 45%;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 0.35em;
+  box-shadow: inset 0px 0px 1px 1px white;
+
+  .navbarItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}

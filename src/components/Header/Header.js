@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from '../Navbar/Navbar';
 import './Header.scss';
 
 export default class Header extends Component {
@@ -9,7 +10,7 @@ export default class Header extends Component {
           <div className="name">KC LEUNG</div>
           <div className="profession">WEB DEVELOPER</div>
         </div>
-        <div className="navbar">navbar</div>
+        <Navbar />
       </div>
     );
   }
