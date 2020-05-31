@@ -1,14 +1,14 @@
 .landingContainer {
-  height: 85vh;
+  height: 80vh;
   display: grid;
-  grid-template-rows: 7vh 78vh;
+  grid-template-rows: 10vh 70vh;
   background-image: url('../../assets/landing.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
 
   .landingContainer-cover {
-    height: 85vh;
+    height: 80vh;
     width: 100%;
     position: absolute;
     background-color: #242943;
@@ -16,12 +16,34 @@
   }
 
   .contentContainer {
-    padding: 0 6rem;
+    padding: 0 11rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     color: white;
     z-index: 1;
+
+    .title {
+      height: 10vh;
+      margin-bottom: 1.5rem;
+      font-size: 3.5rem;
+      font-weight: 600;
+      letter-spacing: 0.45px;
+    }
+
+    .separator {
+      width: 100%;
+      height: 2px;
+      margin-bottom: 2.5rem;
+      background-color: white;
+    }
+
+    .content {
+      width: 40vw;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.25rem;
+      text-transform: uppercase;
+    }
   }
 }
