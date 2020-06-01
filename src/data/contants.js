@@ -65,4 +65,4 @@ export const projectArray = [
   },
 ];
 
-export const navbarArray = ['HOME', 'ABOUT', 'PROJECTS', 'CONTACTS'];
+export const navbarArray = ['HOME', 'PROJECTS', 'ABOUT', 'CONTACTS'];

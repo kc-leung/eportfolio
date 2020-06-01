@@ -12,8 +12,8 @@ export default class Main extends Component {
     return (
       <div className="mainContainer">
         <Landing />
-        <About />
         <Projects />
+        <About />
         <Footer />
       </div>
     );

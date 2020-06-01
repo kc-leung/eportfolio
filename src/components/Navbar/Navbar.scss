@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   border-radius: 0.35em;
-  box-shadow: inset 0px 0px 1px 1px white;
+  box-shadow: inset 0px 0px 0.15rem 0.15rem white;
 
   .navbarItem {
     display: flex;
