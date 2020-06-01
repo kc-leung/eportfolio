@@ -2,4 +2,27 @@
   display: flex;
   flex-direction: column;
   background-color: #242943;
+
+  .contactContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 12rem 12rem 12rem;
+    color: white;
+
+    .messageContainer {
+      padding: 5rem 5rem;
+      grid-column: span 4;
+      grid-row: span 3;
+      border-right: 0.05rem solid #2e3450;
+      border-bottom: 0.05rem solid #2e3450;
+    }
+
+    .emailContainer,
+    .githubContainer,
+    .phoneContainer {
+      padding: 2rem;
+      grid-column: span 3;
+      border-bottom: 0.05rem solid #2e3450;
+    }
+  }
 }
