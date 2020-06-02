@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 export default class Landing extends Component {
   render() {
     return (
-      <div className="landingContainer">
+      <div id="home" className="landingContainer">
         <div className="landingContainer-cover" />
         <Header />
         <div className="contentContainer">

@@ -9,7 +9,9 @@ export default class Navbar extends Component {
         {navbarArray.map((data, itemIndex) => {
           return (
             <div key={itemIndex} className="navbarItem">
-              {data}
+              <a className="navbarLink" href={data.link}>
+                {data.title}
+              </a>
             </div>
           );
         })}

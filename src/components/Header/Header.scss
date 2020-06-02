@@ -9,6 +9,12 @@
   letter-spacing: 0.2rem;
   z-index: 1;
 
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #242943;
+  }
+
   .logoContainer {
     height: 100%;
     display: flex;
@@ -28,6 +34,16 @@
 
     .profession {
       color: white;
+    }
+  }
+
+  .logoContainer:hover {
+    .name {
+      background-color: #9bf1ff;
+    }
+
+    .profession {
+      color: #9bf1ff;
     }
   }
 }

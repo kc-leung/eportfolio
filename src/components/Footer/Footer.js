@@ -8,7 +8,7 @@ import { ReactComponent as PhoneIcon } from '../../assets/svg/phone.svg';
 export default class Footer extends Component {
   render() {
     return (
-      <div className="footerContainer">
+      <div id="contacts" className="footerContainer">
         <div className="contactContainer">
           <div className="emailContainer">
             <a href="mailto:chiu-leung@Hotmail.com">

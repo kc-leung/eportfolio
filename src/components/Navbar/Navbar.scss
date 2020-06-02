@@ -11,5 +11,18 @@
     align-items: center;
     justify-content: center;
     color: white;
+    transition: opacity 0.3s ease-out;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .navbarItem:hover {
+    a {
+      color: #9bf1ff;
+    }
   }
 }
