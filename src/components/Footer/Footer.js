@@ -11,21 +11,38 @@ export default class Footer extends Component {
       <div className="footerContainer">
         <div className="contactContainer">
           <div className="emailContainer">
-            <div className="iconContainer">
-              <EmailIcon className="icon" />
-            </div>
+            <a href="mailto:chiu-leung@Hotmail.com">
+              <div className="iconContainer">
+                <EmailIcon className="icon" />
+              </div>
+            </a>
             <div className="content">
               <div className="title">Email</div>
-              <div className="info">chiu-leung@Hotmail.com</div>
+              <a className="info" href="mailto:chiu-leung@Hotmail.com">
+                chiu-leung@Hotmail.com
+              </a>
             </div>
           </div>
           <div className="githubContainer">
-            <div className="iconContainer">
-              <GithubIcon className="icon" />
-            </div>
+            <a
+              href="https://github.com/kc-leung"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="iconContainer">
+                <GithubIcon className="icon" />
+              </div>
+            </a>
             <div className="content">
               <div className="title">GitHub</div>
-              <div className="info">https://github.com/kc-leung</div>
+              <a
+                className="info"
+                href="https://github.com/kc-leung"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://github.com/kc-leung
+              </a>
             </div>
           </div>
           <div className="phoneContainer">
@@ -38,7 +55,9 @@ export default class Footer extends Component {
             </div>
           </div>
         </div>
-        <div className="footerContent">rights!</div>
+        <div className="footerContent">
+          © 2020 KC Leung. All rights reserved.
+        </div>
       </div>
     );
   }
