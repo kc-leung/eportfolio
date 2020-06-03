@@ -19,9 +19,7 @@ export default class Header extends Component {
   }
 
   handleScroll = () => {
-    if (
-      window.pageYOffset > this.headerRef.current.getBoundingClientRect().bottom
-    ) {
+    if (window.pageYOffset > this.props.landingBottomRect - 62) {
       this.setState({
         sticky: true,
       });

@@ -1,3 +1,16 @@
+// sticky header animation
+@keyframes reveal-header {
+  0% {
+    top: -4rem;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 .headerContainer {
   height: 10vh;
   padding: 0 1.8rem;
@@ -9,6 +22,38 @@
   letter-spacing: 0.2rem;
   z-index: 1;
 
+  .navbarContainer {
+    box-shadow: inset 0px 0px 0.15rem 0.15rem white;
+  }
+}
+
+.stickyHeaderContainer {
+  width: 100%;
+  height: 8vh;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  background-color: #2a2f4a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.65em;
+  letter-spacing: 0.2rem;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: reveal-header 0.35s ease;
+
+  .navbarContainer {
+    .navbarItem:first-of-type {
+      border-left: 0.15rem solid white;
+    }
+    .navbarItem {
+      border-right: 0.15rem solid white;
+    }
+  }
+}
+
+.headerContainer,
+.stickyHeaderContainer {
   a:link,
   a:visited {
     text-decoration: none;

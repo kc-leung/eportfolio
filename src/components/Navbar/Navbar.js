@@ -16,7 +16,7 @@ export default class Navbar extends Component {
                 to={data.link}
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-62}
                 duration={500}
               >
                 {data.title}
