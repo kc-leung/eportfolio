@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 import { navbarArray } from '../../data/contants';
 import './Navbar.scss';
 
@@ -9,9 +11,19 @@ export default class Navbar extends Component {
         {navbarArray.map((data, itemIndex) => {
           return (
             <div key={itemIndex} className="navbarItem">
-              <a className="navbarLink" href={data.link}>
+              <Link
+                activeClass="active"
+                to={data.link}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
                 {data.title}
-              </a>
+              </Link>
+              {/* <a className="navbarLink" href={data.link}>
+                {data.title}
+              </a> */}
             </div>
           );
         })}
