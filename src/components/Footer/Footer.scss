@@ -22,10 +22,9 @@
     .emailContainer,
     .githubContainer,
     .phoneContainer {
+      display: flex;
       padding: 3rem 2rem;
       grid-column: span 1;
-      display: flex;
-      flex-direction: row;
       border: 0.05rem solid #2e3450;
 
       .iconContainer {
@@ -82,5 +81,26 @@
     font-weight: 600;
     line-height: 1.65;
     letter-spacing: 0.025em;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  /* For tablets: */
+  .footerContainer {
+    .contactContainer {
+      grid-template-columns: 1fr 1fr;
+
+      .emailContainer,
+      .githubContainer,
+      .phoneContainer {
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .phoneContainer {
+        grid-column: span 2;
+      }
+    }
   }
 }

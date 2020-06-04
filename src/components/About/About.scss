@@ -18,3 +18,14 @@
     border-bottom: 0.15rem solid white;
   }
 }
+
+@media only screen and (max-width: 950px) {
+  /* For tablets: */
+  .aboutContainer {
+    padding: 4rem 6rem;
+
+    .title {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

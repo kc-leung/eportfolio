@@ -168,6 +168,7 @@
 }
 
 @media only screen and (max-width: 1250px) {
+  /* For smaller screen laptop: */
   .projectsContainer {
     .contentContainer {
       display: grid;
@@ -205,6 +206,7 @@
 }
 
 @media only screen and (max-width: 950px) {
+  /* For tablets: */
   .projectsContainer {
     .contentContainer {
       display: grid;
