@@ -38,7 +38,13 @@ export default class Header extends Component {
         }
         ref={this.headerRef}
       >
-        <a className="logoContainer" href="#home">
+        <a
+          className="logoContainer"
+          href="#home"
+          onClick={() => {
+            scroll.scrollToTop();
+          }}
+        >
           <div className="name">KC LEUNG</div>
           <div className="profession">WEB DEVELOPER</div>
         </a>

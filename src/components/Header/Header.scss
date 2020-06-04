@@ -29,7 +29,7 @@
 
 .stickyHeaderContainer {
   width: 100%;
-  height: 8vh;
+  height: 7vh;
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -89,6 +89,34 @@
 
     .profession {
       color: #9bf1ff;
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .headerContainer {
+    font-size: 0.75rem;
+
+    .navbarContainer {
+      width: 60%;
+      margin: 1.5rem 0;
+      box-shadow: inset 0px 0px 0.12rem 0.12rem white;
+    }
+  }
+
+  .stickyHeaderContainer {
+    height: 6vh;
+    font-size: 0.75rem;
+
+    .navbarContainer {
+      width: 60%;
+
+      .navbarItem:first-of-type {
+        border-left: 0.12rem solid white;
+      }
+      .navbarItem {
+        border-right: 0.12rem solid white;
+      }
     }
   }
 }
