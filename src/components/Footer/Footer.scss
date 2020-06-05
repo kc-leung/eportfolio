@@ -104,3 +104,24 @@
     }
   }
 }
+
+@media only screen and (max-width: 650px), (max-height: 450px) {
+  /* For mobiles */
+  .footerContainer {
+    .contactContainer {
+      grid-template-columns: 1fr;
+
+      .emailContainer,
+      .githubContainer,
+      .phoneContainer {
+        padding: 2rem;
+        justify-content: initial;
+        align-items: center;
+      }
+
+      .phoneContainer {
+        grid-column: span 1;
+      }
+    }
+  }
+}

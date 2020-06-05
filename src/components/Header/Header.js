@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
 import Navbar from '../Navbar/Navbar';
+import Menu from '../Menu/Menu';
+
 import './Header.scss';
 
 export default class Header extends Component {
@@ -9,6 +11,7 @@ export default class Header extends Component {
     super(props);
     this.state = {
       sticky: false,
+      isMobile: false,
     };
 
     this.headerRef = React.createRef();
@@ -16,6 +19,7 @@ export default class Header extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleResize);
   }
 
   handleScroll = () => {
@@ -30,7 +34,20 @@ export default class Header extends Component {
     }
   };
 
+  handleResize = () => {
+    if (window.innerWidth < 650 || window.innerHeight < 450) {
+      this.setState({
+        isMobile: true,
+      });
+    } else {
+      this.setState({
+        isMobile: false,
+      });
+    }
+  };
+
   render() {
+    console.log(window.innerWidth);
     return (
       <div
         className={
@@ -46,9 +63,11 @@ export default class Header extends Component {
           }}
         >
           <div className="name">KC LEUNG</div>
-          <div className="profession">WEB DEVELOPER</div>
+          {this.state.isMobile || (
+            <div className="profession">WEB DEVELOPER</div>
+          )}
         </a>
-        <Navbar />
+        {this.state.isMobile ? <Menu /> : <Navbar />}
       </div>
     );
   }

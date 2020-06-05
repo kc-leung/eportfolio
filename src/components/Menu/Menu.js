@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 
 import { navbarArray } from '../../data/contants';
-import './Navbar.scss';
+import './Menu.scss';
 
-export default class Navbar extends Component {
+export default class Menu extends Component {
   render() {
     return (
-      <div className="navbarContainer">
-        {navbarArray.map((data, itemIndex) => {
+      <div className="menuContainer">
+        menu
+        {/* {navbarArray.map((data, itemIndex) => {
           return (
-            <div key={itemIndex} className="navbarItem">
+            <div key={itemIndex} className="menuItem">
               <Link
                 activeClass="active"
                 to={data.link}
@@ -23,7 +24,7 @@ export default class Navbar extends Component {
               </Link>
             </div>
           );
-        })}
+        })} */}
       </div>
     );
   }

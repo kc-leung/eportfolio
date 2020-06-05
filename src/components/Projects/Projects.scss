@@ -171,7 +171,6 @@
   /* For smaller screen laptop: */
   .projectsContainer {
     .contentContainer {
-      display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 40vh 40vh 40vh;
 
@@ -209,8 +208,6 @@
   /* For tablets: */
   .projectsContainer {
     .contentContainer {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 35vh 35vh 35vh;
 
       .itemContainer {
@@ -241,6 +238,43 @@
           }
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px), (max-height: 450px) {
+  /* For mobiles */
+  .projectsContainer {
+    .contentContainer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 15rem 15rem 15rem 15rem 15rem 15rem;
+
+      .itemContainer {
+        .itemDetailContainer {
+          .descriptionContainer {
+            margin-top: 1rem;
+
+            .projectTitle {
+              font-size: 1rem;
+            }
+
+            .projectDescription {
+              font-size: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    .contentContainer div:nth-child(2),
+    div:nth-child(3),
+    div:nth-child(6) {
+      grid-column: span 1;
+    }
+
+    .contentContainer div:nth-child(1),
+    div:nth-child(4),
+    div:nth-child(5) {
+      grid-column: span 1;
     }
   }
 }

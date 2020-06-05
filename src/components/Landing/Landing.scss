@@ -72,8 +72,30 @@
   .landingContainer {
     .contentContainer {
       .title {
-        height: 15vh;
+        height: 20vh;
         margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px), (max-height: 450px) {
+  /* For mobiles */
+  .landingContainer {
+    .contentContainer {
+      width: 100vw;
+      padding: 0 1.5rem;
+      box-sizing: border-box;
+
+      .title {
+        height: 5vh;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .content {
+        width: 100%;
+        font-size: 0.6rem;
       }
     }
   }

@@ -120,3 +120,17 @@
     }
   }
 }
+
+@media only screen and (max-width: 650px), (max-height: 450px) {
+  /* For mobiles */
+  .headerContainer {
+    height: 4rem;
+    width: 100vw;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .stickyHeaderContainer {
+    height: 3rem;
+  }
+}
