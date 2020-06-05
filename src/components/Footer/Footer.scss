@@ -117,11 +117,27 @@
         padding: 2rem;
         justify-content: initial;
         align-items: center;
+
+        .content {
+          .title {
+            font-size: 1rem;
+          }
+        }
+
+        .content *:nth-child(2) {
+          font-size: 0.8rem;
+          line-height: 1.65;
+          letter-spacing: 0.025em;
+        }
       }
 
       .phoneContainer {
         grid-column: span 1;
       }
+    }
+
+    .footerContent {
+      font-size: 0.8rem;
     }
   }
 }

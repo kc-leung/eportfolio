@@ -29,3 +29,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 650px), (max-height: 450px) {
+  /* For mobiles */
+  .aboutContainer {
+    padding: 2rem;
+
+    .title {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .content {
+      font-size: 0.8rem;
+    }
+  }
+}
