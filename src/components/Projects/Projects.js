@@ -40,7 +40,7 @@ export default class Projects extends Component {
                 onMouseEnter={() => this.onHoverItem(itemIndex)}
                 onMouseLeave={() => this.onHoverItem(null)}
                 onTouchStart={() => this.onHoverItem(itemIndex)}
-                onTouchEnd={() => this.onHoverItem(null)}
+                onTouchCancel={() => this.onHoverItem(null)}
               >
                 <div className="itemDetailContainer">
                   {this.state.active === itemIndex ? (

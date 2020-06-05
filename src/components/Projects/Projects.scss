@@ -53,7 +53,7 @@
             overflow: hidden;
             position: relative;
             transition: all 0.2s ease-out;
-            z-index: 2;
+            z-index: 3;
             cursor: pointer;
 
             .demoIcon,
@@ -108,7 +108,7 @@
             transform: rotate(35deg);
             width: 50px;
             transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); /*easeOutCirc*/
-            z-index: 1;
+            z-index: 2;
           }
 
           .icon:hover:after {
@@ -252,14 +252,14 @@
       .itemContainer {
         .itemDetailContainer {
           .descriptionContainer {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
 
             .projectTitle {
-              font-size: 1rem;
+              font-size: 1.2rem;
             }
 
             .projectDescription {
-              font-size: 0.5rem;
+              font-size: 0.8rem;
             }
           }
         }

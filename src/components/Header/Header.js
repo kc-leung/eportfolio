@@ -20,6 +20,7 @@ export default class Header extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
+    this.handleResize();
   }
 
   handleScroll = () => {
@@ -47,7 +48,6 @@ export default class Header extends Component {
   };
 
   render() {
-    console.log(window.innerWidth);
     return (
       <div
         className={
