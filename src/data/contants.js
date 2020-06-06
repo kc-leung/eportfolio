@@ -42,8 +42,8 @@ export const projectArray = [
     description:
       'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     backgroundImage: Images[5],
-    urlDemo: 'https://github.com/kc-leung/angular-app-comments',
-    urlGithub: 'https://angular-app-comment.herokuapp.com/',
+    urlDemo: 'https://angular-app-comment.herokuapp.com/',
+    urlGithub: 'https://github.com/kc-leung/angular-app-comments',
   },
   {
     title: 'angular - app - student',

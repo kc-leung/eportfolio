@@ -24,7 +24,7 @@ export default class Landing extends Component {
       <div id="home" className="landingContainer" ref={this.landingRef}>
         <div className="landingContainer-cover" />
         <Header landingBottomRect={this.state.bottomRect} />
-        <div className="contentContainer">
+        <div className="contentContainer fade-in">
           <div className="title">Welcome to KC's ePortfolio.</div>
           <div className="separator"></div>
           <div className="content">

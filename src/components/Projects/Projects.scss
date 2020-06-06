@@ -1,3 +1,22 @@
+.fade-in {
+  animation: fadeIn ease-in 0.5s;
+  -webkit-animation: fadeIn ease-in 0.5s;
+  -moz-animation: fadeIn ease-in 0.5s;
+  -o-animation: fadeIn ease-in 0.5s;
+  -ms-animation: fadeIn ease-in 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: initial;
+    opacity: 1;
+  }
+}
+
 .projectsContainer {
   .titleContainer {
     height: 5vh;
@@ -82,6 +101,11 @@
             border: 3px solid #242943c7;
             background-color: #fff;
             box-shadow: 0px 0px 0px 3px #eee inset;
+          }
+
+          .icon span {
+            transition: all 0.2s ease-out;
+            z-index: 2;
           }
 
           .icon:hover span {

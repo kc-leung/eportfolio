@@ -11,9 +11,8 @@ export default class Projects extends Component {
 
     this.state = {
       active: null,
+      animationStatus: false,
     };
-
-    this.testing = './Angularstore.png';
   }
 
   onHoverItem = (index) => {
@@ -44,7 +43,20 @@ export default class Projects extends Component {
               >
                 <div className="itemDetailContainer">
                   {this.state.active === itemIndex ? (
-                    <div className="iconContainer">
+                    <div
+                      className="iconContainer fade-in"
+                      style={
+                        this.state.animationStatus
+                          ? null
+                          : { pointerEvents: 'none' }
+                      }
+                      onAnimationEnd={() =>
+                        this.setState({ animationStatus: true })
+                      }
+                      onAnimationStart={() =>
+                        this.setState({ animationStatus: false })
+                      }
+                    >
                       <a
                         href={`${data.urlDemo}`}
                         target="_blank"

@@ -51,7 +51,9 @@ export default class Header extends Component {
     return (
       <div
         className={
-          this.state.sticky ? 'stickyHeaderContainer' : 'headerContainer'
+          this.state.sticky
+            ? 'stickyHeaderContainer'
+            : 'headerContainer fade-in'
         }
         ref={this.headerRef}
       >
