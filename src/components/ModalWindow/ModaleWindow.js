@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 
 import { navbarArray } from '../../data/contants';
-import './Menu.scss';
+import './ModalWindow.scss';
 
-export default class Menu extends Component {
+export default class ModalWindow extends Component {
   render() {
     return (
       <div className="menuContainer">

@@ -131,6 +131,10 @@
   }
 
   .stickyHeaderContainer {
+    width: 100vw;
     height: 3rem;
+    padding: 0 1rem;
+    justify-content: space-between;
+    box-sizing: border-box;
   }
 }
