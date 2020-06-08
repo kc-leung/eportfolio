@@ -5,6 +5,7 @@ import Navbar from '../Navbar/Navbar';
 import Menu from '../Menu/Menu';
 
 import './Header.scss';
+import '../../animations/shared.scss';
 
 export default class Header extends Component {
   constructor(props) {

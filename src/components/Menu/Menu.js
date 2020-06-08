@@ -1,33 +1,29 @@
 import React, { Component } from 'react';
-import { Link } from 'react-scroll';
+import { connect } from 'react-redux';
 
-import { navbarArray } from '../../data/contants';
+import { isModalWindow } from '../../actions/modalAction';
+
 import './Menu.scss';
 
-export default class Menu extends Component {
+class Menu extends Component {
   render() {
     return (
-      <div className="menuContainer">
+      <div
+        className="menuContainer"
+        onClick={() => this.props.isModalWindow(true)}
+      >
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
-        {/* {navbarArray.map((data, itemIndex) => {
-          return (
-            <div key={itemIndex} className="menuItem">
-              <Link
-                activeClass="active"
-                to={data.link}
-                spy={true}
-                smooth={true}
-                offset={-62}
-                duration={500}
-              >
-                {data.title}
-              </Link>
-            </div>
-          );
-        })} */}
       </div>
     );
   }
 }
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    isModalWindow: (bool) => dispatch(isModalWindow(bool)),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Menu);

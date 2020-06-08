@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Projects.scss';
+import '../../animations/shared.scss';
 
 import { projectArray } from '../../data/contants';
 import demoIcon from '../../assets/svg/demo.svg';

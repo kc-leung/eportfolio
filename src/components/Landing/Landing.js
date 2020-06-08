@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Landing.scss';
+import '../../animations/shared.scss';
 import Header from '../Header/Header';
 
 export default class Landing extends Component {
