@@ -3,33 +3,39 @@ import { Link } from 'react-scroll';
 import { connect } from 'react-redux';
 
 import { isModalWindow } from '../../actions/modalAction';
+import { ReactComponent as CloseIcon } from '../../assets/svg/close.svg';
 
 import { navbarArray } from '../../data/contants';
+
 import './ModalWindow.scss';
+import '../../animations/shared.scss';
 
 class ModalWindow extends Component {
   render() {
     return (
-      <div className="modalWindowContainer">
+      <div className="modalWindowContainer fade-in">
         <div className="close" onClick={() => this.props.isModalWindow(false)}>
-          close
+          <CloseIcon className="closeIcon" />
         </div>
-        {navbarArray.map((data, itemIndex) => {
-          return (
-            <div key={itemIndex} className="menuItem">
-              <Link
-                activeClass="active"
-                to={data.link}
-                spy={true}
-                smooth={true}
-                offset={-62}
-                duration={500}
-              >
-                {data.title}
-              </Link>
-            </div>
-          );
-        })}
+        <div className="menuItemContainer">
+          {navbarArray.map((data, itemIndex) => {
+            return (
+              <div key={itemIndex} className="menuItem">
+                <Link
+                  activeClass="active"
+                  to={data.link}
+                  spy={true}
+                  smooth={true}
+                  offset={-62}
+                  duration={500}
+                  onClick={() => this.props.isModalWindow(false)}
+                >
+                  {data.title}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }

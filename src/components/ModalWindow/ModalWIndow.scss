@@ -5,31 +5,66 @@
   background: rgba(36, 41, 67, 0.9);
   color: white;
   overflow-y: hidden;
+  transition: opacity 0.35s ease;
   z-index: 10000;
-  transition: transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
 
-  .menuItem {
+  .close {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .closeIcon {
+      margin: 1rem 0;
+      width: 5rem;
+      height: 2.5rem;
+      cursor: pointer;
+    }
+
+    .closeIcon:hover path {
+      fill: #9bf1ff;
+    }
+  }
+
+  .menuItemContainer {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    transition: opacity 0.3s ease-out;
 
-    a {
-      cursor: pointer;
-    }
-
-    a:link,
-    a:visited {
-      text-decoration: none;
+    .menuItem {
+      width: 80%;
+      height: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       color: white;
-    }
-  }
+      border-bottom: 0.1rem solid white;
+      transition: opacity 0.3s ease-out;
 
-  .menuItem:hover {
-    a {
-      color: #9bf1ff;
+      a {
+        cursor: pointer;
+        font-size: 0.8em;
+        font-weight: 600;
+        letter-spacing: 0.25em;
+        line-height: 4em;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .menuItem:hover {
+      a {
+        color: #9bf1ff;
+      }
     }
   }
 }

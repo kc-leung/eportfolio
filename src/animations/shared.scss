@@ -50,3 +50,18 @@
     opacity: 1;
   }
 }
+
+.fade-out {
+  animation: fadeOut ease-out 5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
