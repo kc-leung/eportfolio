@@ -12,7 +12,7 @@ export const projectArray = [
     title: 'reactNative - app - PinIT',
     color: '#6fc3df',
     description:
-      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+      'Multiple users within a group to view and share their favorite spot for different activities giving suggestion for those who are new in the area and want to explore what is the best in where they will be heading to.',
     backgroundImage: Images[0],
     urlDemo:
       'https://drive.google.com/file/d/1S05r2VV82cuSQP7EynVRWrq7allT1Etf/view?usp=sharing',
@@ -22,7 +22,7 @@ export const projectArray = [
     title: 'react - redux - firebase',
     color: '#ec8d81',
     description:
-      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+      'Project posting application with account creation system and role based authorization for access control.',
     backgroundImage: Images[1],
     urlDemo: 'https://react-redux-firebase-67bb5.firebaseapp.com/',
     urlGithub: 'https://github.com/kc-leung/react-redux-firebase',
@@ -31,16 +31,16 @@ export const projectArray = [
     title: 'angular - app - employes',
     color: 'rgb(244, 163, 83)',
     description:
-      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+      'Full stack application which display the retrieved employee’s data from a backend API with the feature of updating and validating the inputted information.',
     backgroundImage: Images[4],
     urlDemo: 'https://angular-application-employees.herokuapp.com/',
     urlGithub: 'https://github.com/kc-leung/angular-app-employes',
   },
   {
-    title: 'angular - app - comments',
+    title: 'angular - app - comment',
     color: '#8ea9e8',
     description:
-      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+      'Comment/Posting system which the user can select a specific item and remove their own Comment/Post.',
     backgroundImage: Images[5],
     urlDemo: 'https://angular-app-comment.herokuapp.com/',
     urlGithub: 'https://github.com/kc-leung/angular-app-comments',
@@ -49,7 +49,7 @@ export const projectArray = [
     title: 'angular - app - student',
     color: '#87c5a4',
     description:
-      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+      'Display the retrieved student’s data from a backend API with a filter and searching feature for each student.',
     backgroundImage: Images[2],
     urlDemo: 'https://angular-app-student.herokuapp.com/',
     urlGithub: 'https://github.com/kc-leung/angular-app-student',
@@ -58,7 +58,7 @@ export const projectArray = [
     title: 'angular - github - starring',
     color: '#e7b788',
     description:
-      'Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+      'A web application which access Github developer API allowing the user to add and delete a specific repository from starring.',
     backgroundImage: Images[3],
     urlDemo: 'https://my-gitlist.herokuapp.com/',
     urlGithub: 'https://github.com/kc-leung/angular-github-starring',
