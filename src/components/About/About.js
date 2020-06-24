@@ -8,18 +8,31 @@ export default class About extends Component {
         <div className="title">About Me!</div>
         <div className="content">
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
+            Hello! you are here to learn more about me{' '}
+            <span role="img" aria-label="impressed">
+              😲
+            </span>
+            .
           </p>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et
-            feugiat tempus.
+            I am Kc Leung a Web Developer who loves learning new things. Coding
+            was the perfect place to be since it is always changing and moving
+            forward. New technologies and framework emerges which as a developer
+            we can't stop learning otherwise we will fall behind{' '}
+            <span role="img" aria-label="study">
+              🤓
+            </span>
+            .
+          </p>
+          <p>
+            First, there was jQuery, then Angular, then React and now Vue. All
+            these new ways of coding are emerging so fast, some people might
+            find this overwhelming but for me this is what makes programming
+            exciting{' '}
+            <span role="img" aria-label="study">
+              😁👨‍💻
+            </span>
+            .
           </p>
         </div>
       </div>
