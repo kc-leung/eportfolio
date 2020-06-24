@@ -8,7 +8,7 @@ export default class About extends Component {
         <div className="title">About Me!</div>
         <div className="content">
           <p>
-            Hello there! you are here to learn more about me!?{' '}
+            Hello there! So you are here to learn more about me!?{' '}
             <span role="img" aria-label="impressed">
               😲
             </span>
