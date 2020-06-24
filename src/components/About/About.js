@@ -8,7 +8,7 @@ export default class About extends Component {
         <div className="title">About Me!</div>
         <div className="content">
           <p>
-            Hello! you are here to learn more about me{' '}
+            Hello there! you are here to learn more about me!?{' '}
             <span role="img" aria-label="impressed">
               😲
             </span>
@@ -28,7 +28,7 @@ export default class About extends Component {
             First, there was jQuery, then Angular, then React and now Vue. All
             these new ways of coding are emerging so fast, some people might
             find this overwhelming but for me this is what makes programming
-            exciting{' '}
+            exciting!{' '}
             <span role="img" aria-label="study">
               😁👨‍💻
             </span>
