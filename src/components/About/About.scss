@@ -21,6 +21,31 @@
   .content {
     font-size: 1.2rem;
   }
+
+  .resume {
+    margin: 0.5rem;
+    padding: 0.25rem 0.7rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+
+    a {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #2e3450;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  .resume:hover {
+    background-color: #9bf1ff;
+
+    a {
+      color: black;
+    }
+  }
 }
 
 @media only screen and (max-width: 950px) {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ResumeLink from '../../assets/GuozhaoLiang(KC)_Resume.docx';
 import './About.scss';
 
 export default class About extends Component {
@@ -29,8 +30,20 @@ export default class About extends Component {
             these new ways of coding are emerging so fast, some people might
             find this overwhelming but for me this is what makes programming
             exciting!{' '}
-            <span role="img" aria-label="study">
+            <span role="img" aria-label="happy">
               😁👨‍💻
+            </span>
+            .
+          </p>
+          <p>
+            Want to know more about me? Have a look on my
+            <span className="resume">
+              <a href={ResumeLink} download="GuozhaoLiang(KC)_Resume.docx">
+                resume!
+              </a>
+            </span>
+            <span role="img" aria-label="resume">
+              👈
             </span>
             .
           </p>
