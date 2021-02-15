@@ -77,37 +77,39 @@ export default class Projects extends Component {
                           />
                         </div>
                       </a>
-                      <a
-                        href={`${data.urlGithub}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div
-                          className="icon github"
-                          style={{
-                            backgroundColor: `${data.color}`,
-                          }}
+                      {data.urlGithub &&
+                        <a
+                          href={`${data.urlGithub}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
-                          <span>GitHub</span>
-                          <img
-                            src={githubIcon}
-                            className="githubIcon"
-                            alt="githubIcon"
-                          />
-                        </div>
-                      </a>
+                          <div
+                            className="icon github"
+                            style={{
+                              backgroundColor: `${data.color}`,
+                            }}
+                          >
+                            <span>GitHub</span>
+                            <img
+                              src={githubIcon}
+                              className="githubIcon"
+                              alt="githubIcon"
+                            />
+                          </div>
+                        </a>
+                      }
                     </div>
                   ) : (
-                    <div className="descriptionContainer">
-                      <div className="descriptionHeader">
-                        <div className="projectTitle">{data.title}</div>
-                        <div className="separator" />
+                      <div className="descriptionContainer">
+                        <div className="descriptionHeader">
+                          <div className="projectTitle">{data.title}</div>
+                          <div className="separator" />
+                        </div>
+                        <div className="projectDescription">
+                          {data.description}
+                        </div>
                       </div>
-                      <div className="projectDescription">
-                        {data.description}
-                      </div>
-                    </div>
-                  )}
+                    )}
                 </div>
                 <div
                   className="bannerColor"
