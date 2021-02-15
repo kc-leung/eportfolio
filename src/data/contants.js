@@ -2,7 +2,7 @@ const Images = [
   require('../assets/projects/PinIt.png'),
   require('../assets/projects/ReactApp.png'),
   require('../assets/projects/AngularStudents.png'),
-  require('../assets/projects/FrontEndChallenge.png'),
+  require('../assets/projects/chen.png'),
   require('../assets/projects/PracticeApp.png'),
   require('../assets/projects/Angularstore.png'),
 ];
@@ -28,8 +28,16 @@ export const projectArray = [
     urlGithub: 'https://github.com/kc-leung/react-redux-firebase',
   },
   {
-    title: 'angular - app - employes',
+    title: 'WordPress - Elementor - ChenTeam',
     color: 'rgb(244, 163, 83)',
+    description:
+      'Fully functional and responsive website to display listings, reviews and CHEN team’s members & descriptions.',
+    backgroundImage: Images[3],
+    urlDemo: 'https://www.chenhome.ca/en/'
+  },
+  {
+    title: 'angular - app - employes',
+    color: '#87c5a4',
     description:
       'Full stack application which display the retrieved employee’s data from a backend API with the feature of updating and validating the inputted information.',
     backgroundImage: Images[4],
@@ -47,21 +55,12 @@ export const projectArray = [
   },
   {
     title: 'angular - app - student',
-    color: '#87c5a4',
+    color: '#e7b788 ',
     description:
       'Display the retrieved student’s data from a backend API with a filter and searching feature for each student.',
     backgroundImage: Images[2],
     urlDemo: 'https://angular-app-student.herokuapp.com/',
     urlGithub: 'https://github.com/kc-leung/angular-app-student',
-  },
-  {
-    title: 'angular - github - starring',
-    color: '#e7b788',
-    description:
-      'A web application which access Github developer API allowing the user to add and delete a specific repository from starring.',
-    backgroundImage: Images[3],
-    urlDemo: 'https://my-gitlist.herokuapp.com/',
-    urlGithub: 'https://github.com/kc-leung/angular-github-starring',
   },
 ];
 
